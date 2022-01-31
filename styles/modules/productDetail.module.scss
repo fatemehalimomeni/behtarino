@@ -10,13 +10,12 @@
   @include media-breakpoint-up(sm) {
     display: flex;
     padding: 2rem;
+
   }
 }
 
 .image{
-  display: flex;
-  justify-content: center;
-  height: 100%;
+  padding-top: 3rem;
   img{
     max-width: 85%;
     height: auto;
@@ -29,7 +28,6 @@
 }
 
 .info{
-  height: 100%;
   padding: 1rem;
   @include media-breakpoint-up(sm) {
     width: 65%;
