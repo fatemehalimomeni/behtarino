@@ -1,0 +1,26 @@
+
+.WrapperDiv {
+  display: flex;
+  align-items: center;
+}
+
+.RatingSpan {
+  font-size: 14px;
+  padding-right: 5px;
+  color:#707070;
+  align-self: flex-end;
+}
+
+.BackStarsDiv {
+  display: flex;
+  position: relative;
+  color: #d3d3d3;
+}
+
+.FrontDiv {
+  display: flex;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  color: #ffbc0b;
+}

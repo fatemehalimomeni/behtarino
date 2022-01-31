@@ -1,0 +1,24 @@
+$grid-breakpoints: (
+	xs: 480px,
+	sm: 768px,
+	md: 992px,
+	lg: 1180px,
+	xl: 1400px,
+) !default;
+
+
+@mixin media-breakpoint-up( $point ) {
+	@each $name, $width in $grid-breakpoints {
+		@if $point==$name {
+			@media ( min-width: $width ) {
+				@content;
+			}
+		}
+	}
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
